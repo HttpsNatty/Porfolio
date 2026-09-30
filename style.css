@@ -312,6 +312,18 @@ h2 {
     color: #654556
 }
 
+.skills-label {
+    margin: 22px 0 0;
+    color: var(--wine);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em
+}
+
+.soft-skills {
+    margin-top: 8px
+}
+
 .projects {
     background: #f6eff2;
     border-block: 1px solid var(--line)
