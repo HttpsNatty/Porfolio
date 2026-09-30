@@ -1078,3 +1078,256 @@ h3 span {
         height: 76px
     }
 }
+
+.strongpass {
+    position: relative;
+    gap: 0;
+    text-align: center
+}
+
+.cover-kicker {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px
+}
+
+.strongpass {
+    background: linear-gradient(135deg, #273c4e, #384d58 55%, #4d5262);
+    color: #f6dbe9
+}
+
+.password-preview {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 23px 0 16px;
+    padding: 14px 18px;
+    border: 1px solid #d7b2c76b;
+    border-radius: 7px;
+    background: #1c2d3aa3;
+    box-shadow: 9px 9px 0 #d9b0c921;
+    font-size: 17px;
+    letter-spacing: 3px
+}
+
+.password-preview b {
+    font-size: 25px;
+    color: #efb9d1;
+    font-weight: 400
+}
+
+.password-caption {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #e3c2d4
+}
+
+.compact .cat-project,
+.compact .cat-project-second {
+    top: 158px;
+    right: 14px
+}
+
+.compact .cat-label {
+    z-index: 3
+}
+
+@media(max-width:700px) {
+
+    .compact .cat-project,
+    .compact .cat-project-second {
+        top: 135px;
+        right: 8px
+    }
+}
+
+/* Project covers inspired by each product. */
+.soft-skills-group {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line)
+}
+
+.skills-label {
+    margin: 0 0 12px;
+    color: var(--wine);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px
+}
+
+.soft-skills {
+    margin-top: 0
+}
+
+.soft-skills span {
+    background: #f9eaf0;
+    border-color: #ecd1dd;
+    color: #69384f
+}
+
+.kotoba {
+    background: #17171d
+}
+
+.kotoba img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.adivinhit,
+.bandsync {
+    position: relative;
+    text-align: center
+}
+
+.cover-kicker {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px
+}
+
+.adivinhit {
+    background: radial-gradient(circle at 50% 44%, #a14e78 0, #69385b 44%, #382e4f 100%);
+    color: #ffe5ef
+}
+
+.adivinhit .cover-kicker {
+    margin-bottom: 8px
+}
+
+.music-disc {
+    display: grid;
+    place-items: center;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    border: 1px solid #f3bfd266;
+    background: repeating-radial-gradient(circle, #342c44 0 5px, #55405a 6px 7px);
+    box-shadow: 0 9px 22px #2a1d3755
+}
+
+.music-disc span {
+    display: grid;
+    place-items: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: #efa8c7;
+    color: #512544;
+    font-size: 34px;
+    line-height: 1
+}
+
+.guess-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px
+}
+
+.guess-controls span {
+    border: 1px solid #ffc1d988;
+    border-radius: 18px;
+    padding: 5px 12px;
+    font-size: 12px;
+    background: #382e4f9c
+}
+
+.guess-controls span:last-child {
+    background: #eb9dbb;
+    color: #452b42;
+    border-color: #eb9dbb
+}
+
+.bandsync {
+    background: linear-gradient(135deg, #342739, #694357 60%, #9a6681);
+    color: #fff6f8
+}
+
+.band-board {
+    width: min(74%, 320px);
+    border: 1px solid #f5d9e477;
+    border-radius: 9px;
+    background: #291f30c9;
+    padding: 13px 16px;
+    text-align: left;
+    box-shadow: 10px 10px 0 #2b1d3261
+}
+
+.band-heading {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1
+}
+
+.band-heading span {
+    color: #f6b7d1
+}
+
+.band-events {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0
+}
+
+.band-events>span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex: 1;
+    border: 1px solid #f5d9e459;
+    border-radius: 5px;
+    padding: 7px;
+    background: #ffffff0f
+}
+
+.band-events b {
+    font: 24px/1 var(--serif);
+    color: #ffd6e5
+}
+
+.band-events small {
+    font-size: 9px;
+    letter-spacing: 1px
+}
+
+.band-details {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    color: #f3cedd;
+    font-size: 10px
+}
+
+.band-details span {
+    white-space: nowrap
+}
+
+@media(max-width:700px) {
+    .band-board {
+        width: min(88%, 320px);
+        padding: 11px 13px
+    }
+
+    .band-details {
+        gap: 6px
+    }
+
+    .band-details span {
+        font-size: 9px
+    }
+
+    .music-disc {
+        width: 92px;
+        height: 92px
+    }
+
+    .guess-controls {
+        margin-top: 8px
+    }
+}
