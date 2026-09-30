@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#762a49">
     <meta name="description"
         content="Natália Santos — desenvolvimento de software, dados e Física. Conheça meus projetos, experiências e interesses.">
-    <title>Natália Santos — Código, ciência & curiosidade</title>
+    <title data-i18n="seo.title">Natália Santos — Código, ciência & curiosidade</title>
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23762a49'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='23' fill='%23ffd6e5' font-family='Georgia'%3En%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css?v=2">
@@ -15,61 +15,90 @@
 </head>
 
 <body>
-    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-    <header class="header"><a class="logo" href="#inicio" aria-label="Natália Santos, início">Natália<span> ✳</span></a>
-        <nav aria-label="Navegação principal"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a
-                href="#trajetoria">Trajetória</a><a class="nav-contact" href="#contato">Vamos conversar <span
-                    aria-hidden="true">↗</span></a></nav>
+    <a class="skip" href="#conteudo" data-i18n="accessibility.skip">Pular para o conteúdo</a>
+    <header class="header"><a class="logo" href="#inicio" aria-label="Natália Santos, início"
+            data-i18n-attr="aria-label:accessibility.logo">Natália<span> ✳</span></a>
+        <nav aria-label="Navegação principal" data-i18n-attr="aria-label:accessibility.navigation"><a href="#sobre"
+                data-i18n="nav.about">Sobre</a><a href="#projetos" data-i18n="nav.projects">Projetos</a><a
+                href="#trajetoria" data-i18n="nav.journey">Trajetória</a><a class="nav-contact" href="#contato"><span
+                    data-i18n="nav.contact">Vamos conversar</span> <span aria-hidden="true">↗</span></a></nav>
+        <div class="language-switcher" role="group" aria-label="Selecionar idioma"
+            data-i18n-attr="aria-label:accessibility.languageSelector">
+            <button type="button" data-language="pt" aria-label="Português"
+                data-i18n-attr="aria-label:languages.pt"><span aria-hidden="true">🇧🇷</span> PT</button>
+            <button type="button" data-language="en" aria-label="English" data-i18n-attr="aria-label:languages.en"><span
+                    aria-hidden="true">🇺🇸</span> EN</button>
+            <button type="button" data-language="es" aria-label="Español" data-i18n-attr="aria-label:languages.es"><span
+                    aria-hidden="true">🇪🇸</span> ES</button>
+            <button type="button" data-language="ja" aria-label="日本語" data-i18n-attr="aria-label:languages.ja"><span
+                    aria-hidden="true">🇯🇵</span> 日本語</button>
+        </div>
     </header>
     <main id="conteudo">
         <section class="hero wrap" id="inicio">
             <div class="hero-copy">
-                <p class="eyebrow">DESENVOLVIMENTO · DADOS · FÍSICA</p>
-                <h1>Curiosidade que<br>vira <em>construção.</em></h1>
-                <p class="intro">Oi, eu sou a <strong>Natália Santos.</strong><br>Desenvolvedora e estudante de Física.
-                    Gosto de entender como as coisas funcionam — e criar o que ainda está faltando.</p>
-                <div class="actions"><a class="button" href="#projetos">Explore meus projetos <span
-                            aria-hidden="true">↘</span></a><a class="text-link" href="#trajetoria">Conheça minha
-                        trajetória</a></div>
-                <p class="location">Rio de Janeiro, Brasil <span>·</span> Sempre aprendendo algo novo</p>
+                <p class="eyebrow" data-i18n="hero.eyebrow">DESENVOLVIMENTO · DADOS · FÍSICA</p>
+                <h1 data-i18n="hero.title">Curiosidade que<br>vira <em>construção.</em></h1>
+                <p class="intro" data-i18n="hero.intro">Oi, eu sou a <strong>Natália Santos.</strong><br>Desenvolvedora
+                    e estudante de Física. Gosto de entender como as coisas funcionam — e criar o que ainda está
+                    faltando.</p>
+                <div class="actions"><a class="button" href="#projetos"><span data-i18n="hero.projectsCta">Explore meus
+                            projetos</span> <span aria-hidden="true">↘</span></a><a class="text-link"
+                        href="#trajetoria"><span data-i18n="hero.journeyCta">Conheça minha trajetória</span></a></div>
+                <p class="location"><span data-i18n="hero.location">Rio de Janeiro, Brasil</span> <span>·</span> <span
+                        data-i18n="hero.learning">Sempre aprendendo algo novo</span></p>
             </div>
-            <aside class="note" aria-label="Um pouco sobre mim">
-                <div class="note-top"><span>UM POUCO DO MEU UNIVERSO</span><span aria-hidden="true">✳</span></div>
-                <div class="note-title">Código na tela.<br>Ciência na cabeça.<br><em>Gatos por perto.</em></div>
+            <aside class="note" aria-label="Um pouco sobre mim" data-i18n-attr="aria-label:accessibility.aboutNote">
+                <div class="note-top"><span data-i18n="universe.label">UM POUCO DO MEU UNIVERSO</span><span
+                        aria-hidden="true">✳</span></div>
+                <div class="note-title" data-i18n="universe.title">Código na tela.<br>Ciência na cabeça.<br><em>Gatos
+                        por perto.</em></div>
                 <div class="note-lines">
-                    <p><span>01</span> Transformar ideias em software</p>
-                    <p><span>02</span> Encontrar sentido nos dados</p>
-                    <p><span>03</span> Continuar fazendo perguntas</p>
+                    <p><span>01</span> <span data-i18n="universe.line1">Transformar ideias em software</span></p>
+                    <p><span>02</span> <span data-i18n="universe.line2">Encontrar sentido nos dados</span></p>
+                    <p><span>03</span> <span data-i18n="universe.line3">Continuar fazendo perguntas</span></p>
                 </div>
                 <p class="handwriting">Stay curious. Keep building.</p>
                 <div class="cat-slot cat-hero"></div>
             </aside>
         </section>
         <div class="ribbon" aria-hidden="true">
-            <span>código</span><b>✳</b><span>ciência</span><b>✳</b><span>criatividade</span><b>✳</b><span>curiosidade</span><b>✳</b><span>café
-                & gatos</span>
+            <span data-i18n="ribbon.code">código</span><b>✳</b><span
+                data-i18n="ribbon.science">ciência</span><b>✳</b><span
+                data-i18n="ribbon.creativity">criatividade</span><b>✳</b><span
+                data-i18n="ribbon.curiosity">curiosidade</span><b>✳</b><span data-i18n="ribbon.coffee">café &
+                gatos</span>
         </div>
         <section id="sobre" class="wrap about section">
             <div>
-                <p class="eyebrow">01 / SOBRE MIM</p>
-                <h2>Entre a lógica<br>e a <em>imaginação.</em></h2>
+                <p class="eyebrow" data-i18n="about.eyebrow">01 / SOBRE MIM</p>
+                <h2 data-i18n="about.title">Entre a lógica<br>e a <em>imaginação.</em></h2>
                 <div class="cat-slot cat-about"></div>
             </div>
             <div class="about-text">
-                <p>Meu trabalho conecta desenvolvimento de sistemas, organização de processos e análise de dados.
-                    Transito entre o código, os detalhes de uma regra de negócio e as pessoas que vão usar a solução.
-                </p>
-                <p>Na Física, exercito o olhar investigativo. Na programação, transformo esse olhar em ferramentas. Meus
-                    projetos pessoais também carregam um pouco dos meus interesses: japonês, música, jogos e ciência.
-                </p>
+                <p data-i18n="about.paragraph1">Meu trabalho conecta desenvolvimento de sistemas, organização de
+                    processos e análise de dados. Transito entre o código, os detalhes de uma regra de negócio e as
+                    pessoas que vão usar a solução.</p>
+                <p data-i18n="about.paragraph2">Na Física, exercito o olhar investigativo. Na programação, transformo
+                    esse olhar em ferramentas. Meus projetos pessoais também carregam um pouco dos meus interesses:
+                    japonês, música, jogos e ciência.</p>
                 <div class="skills">
                     <span>PHP</span><span>Laravel</span><span>CakePHP</span><span>JavaScript</span><span>Angular</span><span>Python</span><span>C</span><span>C++</span><span>C#</span><span>.NET</span><span>SQL
                         / MySQL</span><span>Docker</span><span>Git</span><span>Excel</span><span>Power BI ·
                         básico</span>
                 </div>
-                <p class="skills-label">SOFT SKILLS</p>
+                <p class="skills-label" data-i18n="about.softSkillsLabel">SOFT SKILLS</p>
                 <div class="skills soft-skills">
-                    <span>Comunicação</span><span>Colaboração</span><span>Pensamento analítico</span><span>Organização</span><span>Resolução de problemas</span><span>Aprendizado contínuo</span><span>Aprendizagem evolutiva</span><span>Pensamento disruptivo</span><span>Aprendizagem rápida</span><span>Proatividade</span>
+                    <span data-i18n="skills.communication">Comunicação</span><span
+                        data-i18n="skills.collaboration">Colaboração</span><span
+                        data-i18n="skills.analytical">Pensamento analítico</span><span
+                        data-i18n="skills.organization">Organização</span><span
+                        data-i18n="skills.problemSolving">Resolução de problemas</span><span
+                        data-i18n="skills.continuousLearning">Aprendizado contínuo</span><span
+                        data-i18n="skills.evolvingLearning">Aprendizagem evolutiva</span><span
+                        data-i18n="skills.disruptiveThinking">Pensamento disruptivo</span><span
+                        data-i18n="skills.fastLearning">Aprendizagem rápida</span><span
+                        data-i18n="skills.proactivity">Proatividade</span>
                 </div>
             </div>
         </section>
@@ -77,34 +106,39 @@
             <div class="wrap">
                 <div class="section-head">
                     <div>
-                        <p class="eyebrow">02 / PROJETOS SELECIONADOS</p>
-                        <h2>Ideias fora<br>do <em>papel.</em></h2>
+                        <p class="eyebrow" data-i18n="projects.eyebrow">02 / PROJETOS SELECIONADOS</p>
+                        <h2 data-i18n="projects.title">Ideias fora<br>do <em>papel.</em></h2>
                     </div>
-                    <p>Um encontro entre o que eu estudo,<br>o que eu uso e o que me diverte.</p>
+                    <p data-i18n="projects.intro">Um encontro entre o que eu estudo,<br>o que eu uso e o que me diverte.
+                    </p>
                 </div>
                 <div class="project-grid">
                     <article class="project feature">
                         <div class="project-art japanese" aria-hidden="true"><span
                                 class="art-label">日本語を勉強しましょう</span><span class="kanji">星道</span><span
-                                class="art-caption">um caminho entre palavras e estrelas</span></div>
+                                class="art-caption" data-i18n="projects.hoshiMichi.artCaption">um caminho entre palavras
+                                e estrelas</span></div>
                         <div class="project-body">
-                            <p class="eyebrow">APRENDIZADO · JAPONÊS</p>
+                            <p class="eyebrow" data-i18n="projects.hoshiMichi.category">APRENDIZADO · JAPONÊS</p>
                             <h3>HoshiMichi <span>星道</span></h3>
-                            <p>Flashcards para explorar hiragana, katakana, kanji e vocabulário. O estudo de japonês
-                                transformado em um projeto próprio.</p><a class="text-link"
-                                href="https://github.com/HttpsNatty/Project-HoshiMichi" target="_blank"
-                                rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a>
+                            <p data-i18n="projects.hoshiMichi.description">Flashcards para explorar hiragana, katakana,
+                                kanji e vocabulário. O estudo de japonês transformado em um projeto próprio.</p><a
+                                class="text-link" href="https://github.com/HttpsNatty/Project-HoshiMichi"
+                                target="_blank" rel="noopener noreferrer"><span data-i18n="projects.repository">Ver
+                                    repositório</span> <span aria-hidden="true">↗</span></a>
                         </div>
                     </article>
                     <article class="project">
-                        <div class="project-art phonetic" aria-hidden="true"><span class="art-label">SOM →
-                                SÍMBOLO</span><span class="ipa">/ oˈla /</span><span class="art-caption">IPAudio</span>
+                        <div class="project-art phonetic" aria-hidden="true"><span class="art-label"
+                                data-i18n="projects.ipaudio.visualLabel">SOM → SÍMBOLO</span><span class="ipa">/ oˈla
+                                /</span><span class="art-caption">IPAudio</span>
                         </div>
                         <div class="project-body">
-                            <p class="eyebrow">ÁUDIO · LINGUAGEM</p>
+                            <p class="eyebrow" data-i18n="projects.ipaudio.category">ÁUDIO · LINGUAGEM</p>
                             <h3>IPAudio</h3>
-                            <p>Um projeto de conversão de áudio para o Alfabeto Fonético Internacional, aproximando
-                                tecnologia e pronúncia.</p><span class="project-note">Exploração de áudio e
+                            <p data-i18n="projects.ipaudio.description">Um projeto de conversão de áudio para o Alfabeto
+                                Fonético Internacional, aproximando tecnologia e pronúncia.</p><span
+                                class="project-note" data-i18n="projects.ipaudio.note">Exploração de áudio e
                                 fonética</span>
                         </div>
                     </article>
@@ -112,27 +146,31 @@
                         <div class="project-art kotoba" aria-hidden="true"><img src="images/kotobatab-cover.png" alt=""
                                 loading="lazy"></div>
                         <div class="project-body">
-                            <p class="eyebrow">EXTENSÃO · JAPONÊS</p>
+                            <p class="eyebrow" data-i18n="projects.kotobaTab.category">EXTENSÃO · JAPONÊS</p>
                             <h3>KotobaTab</h3>
-                            <p>Uma nova guia com frases em japonês, pronúncia e favoritos. Pequenos momentos do dia como
-                                oportunidade para aprender.</p><span class="project-note">Aprendizado no
-                                navegador</span>
+                            <p data-i18n="projects.kotobaTab.description">Uma nova guia com frases em japonês, pronúncia
+                                e favoritos. Pequenos momentos do dia como oportunidade para aprender.</p><span
+                                class="project-note" data-i18n="projects.kotobaTab.note">Aprendizado no navegador</span>
                         </div>
                         <div class="cat-slot cat-project"></div>
                     </article>
                     <article class="project compact">
-                        <div class="project-art adivinhit" aria-hidden="true"><span class="cover-kicker">APERTA O PLAY ·
-                                ADIVINHA A MÚSICA</span>
+                        <div class="project-art adivinhit" aria-hidden="true"><span class="cover-kicker"
+                                data-i18n="projects.adivinHit.visualLabel">APERTA O PLAY · ADIVINHA A MÚSICA</span>
                             <div class="music-disc"><span>♪</span></div>
-                            <div class="guess-controls"><span>↷ &nbsp;Passar</span><span>✓ &nbsp;Acertei!</span></div>
+                            <div class="guess-controls"><span><span aria-hidden="true">↷</span> &nbsp;<span
+                                        data-i18n="projects.adivinHit.skip">Passar</span></span><span><span
+                                        aria-hidden="true">✓</span> &nbsp;<span
+                                        data-i18n="projects.adivinHit.gotIt">Acertei!</span></span></div>
                         </div>
                         <div class="project-body">
-                            <p class="eyebrow">JOGO · MÚSICA</p>
+                            <p class="eyebrow" data-i18n="projects.adivinHit.category">JOGO · MÚSICA</p>
                             <h3>AdivinHit</h3>
-                            <p>Um jogo de adivinhação musical que leva a diversão de reconhecer uma música para uma
-                                experiência interativa.</p><a class="text-link"
-                                href="https://github.com/HttpsNatty/Project-AdivinHit" target="_blank"
-                                rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a>
+                            <p data-i18n="projects.adivinHit.description">Um jogo de adivinhação musical que leva a
+                                diversão de reconhecer uma música para uma experiência interativa.</p><a
+                                class="text-link" href="https://github.com/HttpsNatty/Project-AdivinHit" target="_blank"
+                                rel="noopener noreferrer"><span data-i18n="projects.repository">Ver repositório</span>
+                                <span aria-hidden="true">↗</span></a>
                         </div>
                         <div class="cat-slot cat-project-second"></div>
                     </article>
@@ -141,82 +179,91 @@
                             <div class="band-board">
                                 <div class="band-heading"><strong>BandSync</strong><span>♪</span></div>
                                 <div class="band-events">
-                                    <span><b>12</b><small>ENSAIO</small></span><span><b>19</b><small>SHOW</small></span>
+                                    <span><b>12</b><small
+                                            data-i18n="projects.bandSync.rehearsal">ENSAIO</small></span><span><b>19</b><small
+                                            data-i18n="projects.bandSync.show">SHOW</small></span>
                                 </div>
-                                <div class="band-details"><span>♫ Repertório</span><span>▤ Equipamentos</span><span>⌖
-                                        Locais</span></div>
+                                <div class="band-details"><span>♫ <span
+                                            data-i18n="projects.bandSync.repertoire">Repertório</span></span><span>▤
+                                        <span data-i18n="projects.bandSync.equipment">Equipamentos</span></span><span>⌖
+                                        <span data-i18n="projects.bandSync.venues">Locais</span></span></div>
                             </div>
                         </div>
                         <div class="project-body">
-                            <p class="eyebrow">MÚSICA · ORGANIZAÇÃO</p>
+                            <p class="eyebrow" data-i18n="projects.bandSync.category">MÚSICA · ORGANIZAÇÃO</p>
                             <h3>BandSync</h3>
-                            <p>Um espaço para organizar a rotina da banda: shows, ensaios e anotações sobre equipamentos
-                                e lugares.</p><span class="project-note">Gestão da banda em um só lugar</span>
+                            <p data-i18n="projects.bandSync.description">Um espaço para organizar a rotina da banda:
+                                shows, ensaios e anotações sobre equipamentos e lugares.</p><span class="project-note"
+                                data-i18n="projects.bandSync.note">Gestão da banda em um só lugar</span>
                         </div>
                     </article>
                     <article class="project compact">
-                        <div class="project-art strongpass" aria-hidden="true"><span class="cover-kicker">SEGURANÇA NO
-                                DIA A DIA</span>
+                        <div class="project-art strongpass" aria-hidden="true"><span class="cover-kicker"
+                                data-i18n="projects.strongPass.visualLabel">SEGURANÇA NO DIA A DIA</span>
                             <div class="password-preview"><span>● ● ● ● ● ● ● ●</span><b aria-hidden="true">✳</b></div>
-                            <span class="password-caption">caracteres · números · símbolos</span>
+                            <span class="password-caption" data-i18n="projects.strongPass.visualCaption">caracteres ·
+                                números · símbolos</span>
                         </div>
                         <div class="project-body">
-                            <p class="eyebrow">FERRAMENTA · SEGURANÇA</p>
+                            <p class="eyebrow" data-i18n="projects.strongPass.category">FERRAMENTA · SEGURANÇA</p>
                             <h3>StrongPass Generator</h3>
-                            <p>Gerador de senhas: uma aplicação prática do interesse por ferramentas úteis e segurança
-                                digital.</p><a class="text-link"
+                            <p data-i18n="projects.strongPass.description">Gerador de senhas: uma aplicação prática do
+                                interesse por ferramentas úteis e segurança digital.</p><a class="text-link"
                                 href="https://github.com/HttpsNatty/StrongPass-Generator" target="_blank"
-                                rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a>
+                                rel="noopener noreferrer"><span data-i18n="projects.repository">Ver repositório</span>
+                                <span aria-hidden="true">↗</span></a>
                         </div>
                     </article>
                 </div>
-                <div class="more-projects"><span>E a curiosidade continua.</span>
+                <div class="more-projects"><span data-i18n="projects.more">E a curiosidade continua.</span>
                     <div class="cat-slot cat-extra"></div><a class="text-link" href="https://github.com/HttpsNatty"
-                        target="_blank" rel="noopener noreferrer">Mais projetos no GitHub <span
-                            aria-hidden="true">↗</span></a>
+                        target="_blank" rel="noopener noreferrer"><span data-i18n="projects.moreLink">Mais projetos no
+                            GitHub</span> <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </section>
         <section class="wrap section journey" id="trajetoria">
             <div class="journey-title">
-                <p class="eyebrow">03 / TRAJETÓRIA</p>
-                <h2>Aprender.<br>Conectar.<br><em>Construir.</em></h2>
-                <p>Uma formação que reúne tecnologia,<br>ciência e colaboração.</p>
+                <p class="eyebrow" data-i18n="journey.eyebrow">03 / TRAJETÓRIA</p>
+                <h2 data-i18n="journey.title">Aprender.<br>Conectar.<br><em>Construir.</em></h2>
+                <p data-i18n="journey.intro">Uma formação que reúne tecnologia,<br>ciência e colaboração.</p>
                 <div class="cat-slot cat-journey"></div>
             </div>
             <div class="timeline">
-                <article><span class="timeline-tag">EXPERIÊNCIA</span>
-                    <h3>Desenvolvimento de sistemas</h3>
-                    <p>Atuação com aplicações web, APIs, regras de negócio e manutenção de sistemas. Experiência com
-                        PHP, Laravel, CakePHP, JavaScript, Angular e bancos de dados SQL.</p>
+                <article><span class="timeline-tag" data-i18n="journey.experience.label">EXPERIÊNCIA</span>
+                    <h3 data-i18n="journey.experience.title">Desenvolvimento de sistemas</h3>
+                    <p data-i18n="journey.experience.description">Atuação com aplicações web, APIs, regras de negócio e
+                        manutenção de sistemas. Experiência com PHP, Laravel, CakePHP, JavaScript, Angular e bancos de
+                        dados SQL.</p>
                 </article>
-                <article><span class="timeline-tag">FORMAÇÃO · EM ANDAMENTO</span>
-                    <h3>Bacharelado em Física</h3>
-                    <p>CEFET/RJ. Raciocínio analítico, investigação científica e interesse na conexão entre fenômenos
-                        físicos e análise de dados.</p>
+                <article><span class="timeline-tag" data-i18n="journey.education.label">FORMAÇÃO · EM ANDAMENTO</span>
+                    <h3 data-i18n="journey.education.title">Bacharelado em Física</h3>
+                    <p data-i18n="journey.education.description">CEFET/RJ. Raciocínio analítico, investigação científica
+                        e interesse na conexão entre fenômenos físicos e análise de dados.</p>
                 </article>
-                <article><span class="timeline-tag">PESQUISA</span>
-                    <h3>Neutrinos & análise de dados</h3>
-                    <p>Iniciação científica voltada à violação de CP no setor leptônico e às suas implicações para a
-                        assimetria entre matéria e antimatéria, com interesse em análise de dados.</p>
+                <article><span class="timeline-tag" data-i18n="journey.research.label">PESQUISA</span>
+                    <h3 data-i18n="journey.research.title">Neutrinos & análise de dados</h3>
+                    <p data-i18n="journey.research.description">Iniciação científica voltada à violação de CP no setor
+                        leptônico e às suas implicações para a assimetria entre matéria e antimatéria, com interesse em
+                        análise de dados.</p>
                 </article>
-                <article><span class="timeline-tag">LIDERANÇA & EXTENSÃO</span>
-                    <h3>IEEE CEFET/RJ · WolfByte</h3>
-                    <p>Experiência na liderança de programação e na organização de projetos de games, hardware,
-                        inteligência artificial e web.</p>
+                <article><span class="timeline-tag" data-i18n="journey.leadership.label">LIDERANÇA & EXTENSÃO</span>
+                    <h3 data-i18n="journey.leadership.title">IEEE CEFET/RJ · WolfByte</h3>
+                    <p data-i18n="journey.leadership.description">Experiência na liderança de programação e na
+                        organização de projetos de games, hardware, inteligência artificial e web.</p>
                 </article>
-                <article><span class="timeline-tag">APRENDIZADO CONTÍNUO</span>
-                    <h3>Idiomas & segurança digital</h3>
-                    <p>Português, inglês, espanhol e estudos de japonês. Formação em andamento no Google Cybersecurity
-                        Professional Certificate.</p>
+                <article><span class="timeline-tag" data-i18n="journey.learning.label">APRENDIZADO CONTÍNUO</span>
+                    <h3 data-i18n="journey.learning.title">Idiomas & segurança digital</h3>
+                    <p data-i18n="journey.learning.description">Português, inglês, espanhol e estudos de japonês.
+                        Formação em andamento no Google Cybersecurity Professional Certificate.</p>
                 </article>
             </div>
         </section>
         <section class="contact" id="contato">
             <div class="wrap contact-inner">
                 <div>
-                    <p class="eyebrow">04 / VAMOS CONVERSAR</p>
-                    <h2>Boas ideias começam<br>com um <em>olá.</em></h2><a class="email"
+                    <p class="eyebrow" data-i18n="contact.eyebrow">04 / VAMOS CONVERSAR</p>
+                    <h2 data-i18n="contact.title">Boas ideias começam<br>com um <em>olá.</em></h2><a class="email"
                         href="mailto:nataliasantos.dev@gmail.com">nataliasantos.dev@gmail.com <span
                             aria-hidden="true">↗</span></a>
                 </div>
@@ -232,7 +279,7 @@
     <footer class="wrap footer">
         <p><a href="https://github.com/HttpsNatty" target="_blank" rel="noopener noreferrer">Natália Santos</a> <span>©
                 2026</span></p>
-        <button id="motion-toggle" type="button" aria-pressed="false">Pausar gatinhos</button>
+        <button id="motion-toggle" type="button" aria-pressed="false" data-i18n="motion.pause">Pausar gatinhos</button>
     </footer>
 </body>
 

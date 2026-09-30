@@ -89,6 +89,36 @@ button:focus-visible {
     text-underline-offset: 6px
 }
 
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0
+}
+
+.language-switcher button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--muted);
+    padding: 5px 6px;
+    font-size: 11px;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: background .2s, border-color .2s, color .2s
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+    border-color: #d4afbe;
+    background: #f8e4eb;
+    color: var(--wine)
+}
+
+.language-switcher button:focus-visible {
+    outline-offset: 2px
+}
+
 .nav-contact {
     border: 1px solid #bfa4af;
     padding: 9px 17px;
@@ -673,7 +703,7 @@ h3 span {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url('/images/cats-all-seven.png');
+    background-image: url('images/cats-all-seven.png');
     background-size: 300% 200%;
     background-repeat: no-repeat;
     transform-origin: 50% 85%;
@@ -809,6 +839,7 @@ h3 span {
     .header {
         padding: 18px 20px;
         gap: 15px;
+        flex-wrap: wrap;
         align-items: start
     }
 
@@ -822,6 +853,12 @@ h3 span {
         flex-wrap: wrap;
         justify-content: end;
         max-width: 260px
+    }
+
+    .language-switcher {
+        width: 100%;
+        justify-content: flex-end;
+        order: 3
     }
 
     .nav-contact {
